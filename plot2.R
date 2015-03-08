@@ -12,7 +12,7 @@ data2use$Time <- paste(data2use$Date, data2use$Time, sep=" ")
 data2use$Time <- strptime(data2use$Time, "%Y-%m-%d %H:%M:%S")
 
 # create a blank png to plot
-png(filename = "plot2.png", width = 480, height = 480, bg = "transparent")
+png(filename = "plot2.png", width = 480, height = 480, bg = "white")
 
 # plot
 plot(data2use$Time,data2use$Global_active_power,type="l"

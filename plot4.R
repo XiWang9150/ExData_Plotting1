@@ -12,7 +12,7 @@ data2use$Time <- paste(data2use$Date, data2use$Time, sep=" ")
 data2use$Time <- strptime(data2use$Time, "%Y-%m-%d %H:%M:%S")
 
 # create a blank png to plot
-png(filename = "plot4.png", width = 480, height = 480, bg = "transparent")
+png(filename = "plot4.png", width = 480, height = 480, bg = "white")
 # tell R that we are going to plot a 2 row * 2 column
 par(mfrow = c(2,2))
 
